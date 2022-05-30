@@ -1,0 +1,34 @@
+.main-nav {
+  position: relative;
+  height: 82px;
+}
+
+nav {
+  padding: 0px 10px;
+  z-index: 1000;
+}
+nav .navbar-brand {
+    color: rgb(31 41 55 / 1);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+nav .navbar-brand:hover {
+    color: rgb(31 41 55 / 1);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a .anticon {
+  font-size: 36px;
+  color: white;
+}
+
+nav h6 {
+  color: white;
+}
