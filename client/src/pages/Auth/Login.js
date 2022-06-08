@@ -66,6 +66,11 @@ export const Login = (props) => {
                 <div className='text-center'>
                   <div className='header'>
                     <Link to="/">Countlori</Link>
+                    <p className='fs-6 text-white' style = {{wordWrap: 'break-word'}}>
+                      This is an web application of a calorie calculator. After you have sign in, you are open to the world.
+                      You can start using presets or typing in your own calorie estimation and get a idea on how you are doing
+                      This is it, simple right? Login or Register now!
+                    </p>
                   </div>
                   <form onSubmit={onFinish} className='p-4'>
                     <div className="floating-label-group mb-3">

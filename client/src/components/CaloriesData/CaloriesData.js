@@ -103,7 +103,7 @@ export const CaloriesData = ({ updateFunction, calId }) => {
                                     {
                                         presets.length > 0 && presets.filter(f => f.category == 'intake').map(preset => {
                                             return (
-                                                <option value={preset.value}>{preset.title}</option>
+                                                <option key={preset._id} value={preset.value}>{preset.title}</option>
                                             )
                                         })
                                     }
@@ -121,7 +121,7 @@ export const CaloriesData = ({ updateFunction, calId }) => {
                                     {
                                         presets.length > 0 && presets.filter(f => f.category == 'burnt').map(preset => {
                                             return (
-                                                <option value={preset.value}>{preset.title}</option>
+                                                <option key={preset._id} value={preset.value}>{preset.title}</option>
                                             )
                                         })
                                     }

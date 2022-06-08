@@ -6,12 +6,15 @@ const dataSchema = new mongoose.Schema({
         required: true
     },
     burnt: {
-        type: Number,
+        type: Number, 
         required: true
     },
     total: {
         type: Number,
         required: true
+    },
+    time: {
+        type: String
     }
 
 }, { timestamps: true }

@@ -10,10 +10,14 @@ exports.getAllCaloriesData = async (req, res) => {
 }
 
 exports.addCaloriesData = async (req, res) => {
+    var today = new Date();
+    let uploadTime = today.toLocaleString("en-US");
+
     const data = new CaloriesData({
         intake: req.body.intake,
         burnt: req.body.burnt,
-        total: req.body.intake - req.body.burnt
+        total: req.body.intake - req.body.burnt,
+        time: uploadTime
     });
 
     const saveIt = await data.save();

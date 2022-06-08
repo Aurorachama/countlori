@@ -81,12 +81,12 @@ export const Home = () => {
                     return (
                       <tr key={index}>
                         <th>{index + 1}</th>
-                        <td>{d.updatedAt}</td>
-                        <td>{d.intake}kJ</td>
-                        <td>{d.burnt}kJ</td>
-                        <td>{d.total}kJ</td>
+                        <td>{d.time}</td>
+                        <td className='fw-bold text-success'>{d.intake}kJ</td>
+                        <td className='fw-bold text-danger'>{d.burnt}kJ</td>
+                        <td className='fw-bold'>{d.total}kJ</td>
                         <th>
-                          <Link className='btn'><CaloriesData calId={d._id} updateFunction={updateFunction} /></Link>
+                          <a className='btn'><CaloriesData calId={d._id} updateFunction={updateFunction} /></a>
                           <Button type='primary' onClick={() => deleteHandler(d._id)}><DeleteFilled /></Button>
                         </th>
                       </tr>
@@ -96,7 +96,7 @@ export const Home = () => {
               </tbody>
             </table>
             <div className='text-end m-5'>
-              <h5>Total Balance: {data?.reduce((a, b) => a + b.total, 0)}kJ</h5>
+              <h5>Total Balance: <span className='text-primary'>{data?.reduce((a, b) => a + b.total, 0)}kJ</span></h5>
             </div>
           </div>
       }

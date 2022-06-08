@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "proxy": "http://localhost:8000",
   "private": true,
+  "start": "GENERATE_SOURCEMAP=false react-scripts start",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@testing-library/jest-dom": "^5.16.1",
